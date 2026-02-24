@@ -1,23 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
   <head>
-    <title>Home</title>
+    <title>Alex Maistrov | Portefølje</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <!-- HEADER: stedet der ego og navigasjon later som de er struktur -->
+    <header>
+      <!-- NAV: illusjonen av kontroll over kaoset -->
+      <nav aria-label="Hovednavigasjon">
+        <ul>
+          <li><a href="#hjem">Hjem</a></li>
+          <li><a href="#om">Om meg</a></li>
+          <li><a href="#prosjekter">Prosjekter</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- MAIN: der oppmerksomheten din enten våkner eller dør -->
     <main>
-      <h1>Home page</h1>
+
+        <!-- HERO SECTION: første kontakt med virkeligheten -->
+        <section id="hjem" aria-labelledby="hjem-tittel" class="hero">
+          <h2 id="hjem-tittel">Velkommen</h2>
+          <p> Hei. Dette er porteføljen min. Du kan bla i fred. Jeg lover å ikke selge deg noe. 😊
+          </p>
+        </section>
+
+
+
+
+        <!-- ABOUT SECTION: identitet som en midlertidig hypotese -->
+        <section id="om" aria-labelledby="om-tittel" class="about">
+          <h2 id="om-tittel">Om meg</h2>
+
+          <p>
+            Jeg heter Alex Maistrov. Jeg er en fullstack-utvikler som bygger prosjekter med Python og JavaScript —
+            ofte med AI i motorrommet, ikke som pynt i markedsføringen.
+            Jeg liker systemer som faktisk fungerer: tydelige modeller, målbare resultater og færre magiske forklaringer.
+          </p>
+
+          <p>
+            Retningen min er prosjekter for utdanning og utvikling av kritisk tenkning, bygget på rasjonalisme og LessWrong-inspirerte prinsipper:
+            bedre spørsmål, bedre beslutninger, mindre selvbedrag.
+            Jeg elsker utfordringer der jeg kan bringe struktur og optimalisering, og nyskape noe ved å kombinere rasjonalitet og kreativitet.
+          </p>
+          <figure>
+            <img
+              src="Images/photo.jpg"
+              alt="Portrett av Alex Maistrov"
+              sizes="(max-width: 300px) 100vw, 600px"
+            />
+          </figure>
+        </section>
+
+        <!-- PROJECTS SECTION: bevis på at jeg kan gjøre mer enn å snakke -->
+        <section id="prosjekter" aria-labelledby="prosjekter-tittel" class 
+        ="projects">
+          <h2 id="prosjekter-tittel">Prosjekter</h2>
+
+          <article class="project">
+            <h3>Prosjekt 1: </h3>
+            <p></p>
+          </article>
+
+          <article class="project">
+            <h3>Prosjekt 2: </h3>
+            <p></p>
+          </article>
+
+          <article class="project">
+            <h3>Prosjekt 3: </h3>
+            <p></p>
+          </article>
+
     </main>
+    <hr>
+    <!-- FOOTER: der identitet reduseres til metadata -->
+    <footer>
+      <p>Laget av Inferix.<br>Eller mer presist: fremprovosert av nysgjerrighet.</p>
+      <p><small>Advarsel: Lang eksponering kan føre til forbedret tenkning.</small></p>
+    </footer>
   </body>
 </html>
