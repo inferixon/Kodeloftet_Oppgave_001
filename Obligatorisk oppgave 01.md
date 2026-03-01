@@ -1,19 +1,5 @@
 # Obligatorisk oppgave 01
 
-## TODO
-
-- [ ] Header med navigasjonsmeny
-- [ ] Hero-seksjon i `<main>`
-- [ ] Flexbox layout for header + hero
-- [ ] Seksjon: Om meg
-- [ ] Seksjon: Prosjekter (placeholders)
-- [ ] Seksjon: Kontakt
-- [ ] Flexbox layout for innhold i `<main>`
-- [ ] Footer med kreditering
-- [ ] Lenke til GitHub-profil i footer
-- [ ] Levering: GitHub repo-lenke
-- [ ] Levering: Vercel-lenke
-
 Dette vil være den første obligatoriske oppgaven for kurset, og i denne oppgaven skal du bygge en portfolio-nettside som samler prosjektene dine som vi skal jobbe med i løpet av Kodeloftet.
 
 Du kan enten bygge videre på et eksisterende prosjekt fra dagens undervisning eller starte fra template.
