@@ -138,7 +138,7 @@ main {
 }
 
 main h2 {
-  margin: 0 0 14px;
+  margin: 2px 0 14px;
   padding: 10px 14px;
   display: block;
   width: 100%;
@@ -149,7 +149,7 @@ main h2 {
 }
 
 main p {
-  margin: 0 0 14px;
+  margin: 2px 0 14px;
 }
 
 .about-content {
@@ -237,7 +237,7 @@ main p {
 }
 
 .project-card h3 {
-  margin: 0 0 8px;
+  margin: 2px 0 8px;
 }
 
 .project-meta {
