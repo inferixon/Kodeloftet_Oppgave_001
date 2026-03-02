@@ -7,17 +7,35 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body>
+  <body id="top">
     <!-- HEADER: stedet der ego og navigasjon later som de er struktur -->
     <header>
+      <!-- LOGO: noe som infererer fra tenke til handling -->
+      <div class="logo">
+        <a href="#top" aria-label="Til toppen">
+          <img src="Assets/logo.png" alt="Inferix logo" width="64" height="64" />
+        </a>
+      </div>
       <!-- NAV: illusjonen av kontroll over kaoset -->
       <nav aria-label="Hovednavigasjon">
         <ul>
-          <li><a href="#hjem">Hjem</a></li>
+          <li><a href="#top">Hjem</a></li>
           <li><a href="#om">Om meg</a></li>
           <li><a href="#prosjekter">Prosjekter</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
+      <div class="sm" aria-label="Sosiale medier">
+        <a class="sm-link sm-link--github" href="https://github.com/inferixon" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <img src="https://github.com/favicon.ico" alt="" width="30" height="30"/>
+        </a>
+        <a class="sm-link" href="https://www.linkedin.com/in/inferix/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <img src="https://www.linkedin.com/favicon.ico" alt="" width="38" height="38" />
+        </a>
+        <a class="sm-link" href="https://www.artstation.com/inferix" target="_blank" rel="noreferrer" aria-label="ArtStation">
+          <img src="https://www.artstation.com/favicon.ico" alt="" width="38" height="38"/>
+        </a>
+      </div>
     </header>
     
     <!-- MAIN: der oppmerksomheten din enten våkner eller dør -->
@@ -25,59 +43,89 @@
 
         <!-- HERO SECTION: første kontakt med virkeligheten -->
         <section id="hjem" aria-labelledby="hjem-tittel" class="hero">
+          <br>
           <h2 id="hjem-tittel">Velkommen</h2>
-          <p> Hei. Dette er porteføljen min. Du kan bla i fred. Jeg lover å ikke selge deg noe. 😊
+          <br>
+          <p> Hei. Dette er porteføljen min. Du kan bla i fred. Jeg lover å ikke selge deg noe. 😊🤞
           </p>
         </section>
 
         <!-- ABOUT SECTION: identitet som en midlertidig hypotese -->
         <section id="om" aria-labelledby="om-tittel" class="about">
           <h2 id="om-tittel">Om meg</h2>
-
-          <p>
-            Jeg heter Alex Maistrov. Jeg er en fullstack-utvikler som bygger prosjekter med Python og JavaScript —
-            ofte med AI i motorrommet, ikke som pynt i markedsføringen.
-            Jeg liker systemer som faktisk fungerer: tydelige modeller, målbare resultater og færre magiske forklaringer.
-          </p>
-
-          <p>
-            Retningen min er prosjekter for utdanning og utvikling av kritisk tenkning, bygget på rasjonalisme og LessWrong-inspirerte prinsipper:
-            bedre spørsmål, bedre beslutninger, mindre selvbedrag.
-            Jeg elsker utfordringer der jeg kan bringe struktur og optimalisering, og nyskape noe ved å kombinere rasjonalitet og kreativitet.
-          </p>
-          <figure>
-            <img
-              src="Images/photo.jpg"
-              alt="Portrett av Alex Maistrov"
-              sizes="(max-width: 300px) 100vw, 600px"
-            />
-          </figure>
+          <br>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Jeg heter Alex Maistrov. Jeg er en fullstackutvikler som bygger prosjekter med Python og JavaScript — ofte med AI i motorrommet.
+              </p>
+              <p>
+                Retningen min er prosjekter for utdanning og utvikling av kritisk tenkning, bygget på LessWrong-inspirerte prinsipper: mer selvoppdatering ⇒ mindre selvbedrag.
+              </p>
+              <p>
+                Jeg elsker utfordringer der jeg kan bringe struktur og optimalisering, og nyskape noe ved å kombinere rasjonalitet og kreativitet.
+              </p>
+            </div>
+            <figure>
+              <img
+                src="Assets/photo.jpg"
+                alt="Portrett av Alex Maistrov"
+                class="portrait"
+              />
+            </figure>
+          </div>
         </section>
+        <br>
 
         <!-- PROJECTS SECTION: bevis på at jeg kan gjøre mer enn å snakke -->
         <section id="prosjekter" aria-labelledby="prosjekter-tittel" class="projects">
           <h2 id="prosjekter-tittel">Prosjekter</h2>
+          <br>
+          <div class="projects-grid">
+            <article class="project-card">
+              <a class="project-card-link" href="#">
+                <div class="project-thumb" aria-hidden="true"><img src="Assets/p1-logo.jpg" alt="Fakta eller Myte logo"></div>
+                <h3>Fakta eller Myte</h3>
+                <p>En treningsarena for å skille vitenskapelige fakta fra TikTok-rykter i 11 kategorier. AI-genererte påstander og forklaringer. Adaptiv vanskelighetsgrad. Prestasjonssystem.</p>
+                <p class="project-meta">Tech: HTML / CSS / JS / API / AI</p>
+                <p class="project-cta">Tar du utfordringen?</p>
+              </a>
+            </article>
 
-          <article class="project">
-            <h3>Prosjekt 1: </h3>
-            <p></p>
-          </article>
+            <article class="project-card">
+              <a class="project-card-link" href="#">
+                <div class="project-thumb" aria-hidden="true"><img src="Assets/p2-logo.jpg" alt="LogikkQuiz logo"></div>
+                <h3>LogikkQuiz</h3>
+                <p>Lær logiske operasjoner sammen med morsomme skapninger som ikke dømmer deg – men systemet gjør det. Over 50 000 unike kombinasjoner generert dynamisk. Premiss ⇒ Tre valg ⇒ Ett korrekt svar.</p>
+                <p class="project-meta">Tech: HTML / CSS / JS</p>
+                <p class="project-cta">Starter vi hjernen?</p>
+              </a>
+            </article>
 
-          <article class="project">
-            <h3>Prosjekt 2: </h3>
-            <p></p>
-          </article>
-
-          <article class="project">
-            <h3>Prosjekt 3: </h3>
-            <p></p>
-          </article>
-
+            <article class="project-card">
+              <a class="project-card-link" href="#">
+                <div class="project-thumb" aria-hidden="true"><img src="Assets/p3-logo.jpg" alt="Inferika AI logo"></div>
+                <h3>Inferika AI</h3>
+                <p>En inferisk web-chat med én entitet som ikke er her for å trøste deg. Hun er ganske kresen når det gjelder faktasjekking og liker å pirke i dine kognitive skjevheter. Bare ha det gøy!</p>
+                <p class="project-meta">Tech: HTML / CSS / JS / API / AI / RAG</p>
+                <p class="project-cta">Risikere en prat?</p>
+              </a>
+            </article>
+          </div>
+        </section>
+        <br>
+    <!-- CONTACT SECTION: der du kan nå meg, eller sende en melding -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <br>
+            <p>Du kan nå meg på <a href="mailto:alekzmay@gmail.com">alekzmay@gmail.com</a></p>
+        </section>
     </main>
     <hr>
+    <br>    
     <!-- FOOTER: der identitet reduseres til metadata -->
     <footer>
-      <p>Laget av Inferix.<br>Eller mer presist: fremprovosert av nysgjerrighet.</p>
+      <p>Laget av Inferix, 2026.<br>Eller mer presist: fremprovosert av nysgjerrighet.</p>
       <p><small>Advarsel: Lang eksponering kan føre til forbedret tenkning.</small></p>
     </footer>
   </body>
