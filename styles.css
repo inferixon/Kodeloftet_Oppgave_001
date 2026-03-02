@@ -13,10 +13,29 @@ CSS Rule =  hva og hvordan skal ting endres property: value; display: flex;
 body {
 	font-family: "Palatino Linotype";
   background-color: Canvas;
+  background-image: url("Assets/background.jpg");
+  background-repeat: repeat;
+  background-size: 1000px 1000px;
+  animation: tile-drift-down 100s linear infinite;
   color: CanvasText;
   max-width: 1150px;
   margin: 0 auto;
   padding: 20px;
+}
+
+@keyframes tile-drift-down {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 1000px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
 
 a {
