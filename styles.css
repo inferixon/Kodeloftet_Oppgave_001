@@ -149,7 +149,7 @@ main h2 {
 }
 
 main p {
-  margin: 2px 0 14px;
+  margin: 0 2px 14px;
 }
 
 .about-content {
@@ -237,7 +237,7 @@ main p {
 }
 
 .project-card h3 {
-  margin: 2px 0 8px;
+  margin: 0 2px 8px;
 }
 
 .project-meta {
