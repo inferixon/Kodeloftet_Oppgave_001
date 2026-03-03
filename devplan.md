@@ -17,6 +17,7 @@ Single page (one `index.html`):
 	- **Background**: an image + a simple animated effect (parallax is optional).
 - **Footer**: horizontal flex bar with closing text + contacts.
 
+
 ---
 
 ## Design / Layout Rules
